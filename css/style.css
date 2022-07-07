@@ -1,0 +1,18 @@
+body
+{
+    background-color: rgb(64, 53, 221);
+}
+#body .container
+{
+    background-color: rgb(213, 213, 216);
+ 
+}
+
+#btn-edit
+{
+    display: none;
+}
+.alert
+{
+    display: none;
+}

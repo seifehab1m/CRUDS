@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    
+
+    <section id="body">
+        <div class="container shadow-lg">
+        <h1 class="text-primary text-center mt-5">CRUDS SYSTEM</h1>
+
+            <div class="row mx-2 py-2">
+                <label class="mt-3 mb-2 fw-bold" for="productName">Product Name:</label>
+                <input class="form-control  " type="text" id="productName" placeholder="please enter Product Name">
+                <div id="alert-name" class="alert alert-danger " role="alert">
+                    please enter a valid product name
+                  </div>
+                <label class="mt-3 mb-2 fw-bold" for="productPrice">Product Price:</label>
+                <input class="form-control" type="number" id="productPrice" placeholder="please enter Product Price">
+                <div id="alert-price" class="alert alert-danger alert-name" role="alert">
+                    please enter a valid product price
+                  </div>
+                <label class="mt-3 mb-2 fw-bold" for="productCategory">Product Category:</label>
+                <input class="form-control" type="text" id="productCategory"
+                    placeholder="please enter Product Category">
+                    <div id="alert-category" class="alert alert-danger alert-name" role="alert">
+                        please enter a valid product category
+                      </div>
+                <label class="mt-3 mb-2 fw-bold" for="productDescription">Product Description:</label>
+                <input class="form-control" type="text" id="productDescription"
+                    placeholder="please enter Product Description">
+                    <div id="alert-description" class="alert alert-danger alert-name" role="alert">
+                        please enter a valid product description
+                      </div>
+                <button class="btn btn-primary mt-3 w-50 text-white m-auto fs-6  " id="btn-add" onclick="validationProduct()"> Add product</button>
+                <button class="btn btn-primary mt-3 w-50 text-white m-auto fs-6 " id="btn-edit" onclick="editProduct()"> Edit product</button>
+
+                <input type="text" onkeyup="search()" placeholder="Searching......" class="mt-4 w-75 m-auto mb-3" id="productSearch">
+            </div>
+        </div>
+    </section>
+    <section id="AddedProducts">
+        <div class="container bg-light shadow-lg">
+            <div class="row">
+                <table class="table  m-auto mt-4 table-striped .col">
+                    <thead>
+                        <th>#</th>
+                        <th>productName</th>
+                        <th>productPrice</th>
+                        <th>productCategory</th>
+                        <th>productDescription</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody id="table-data">    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
